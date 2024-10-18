@@ -2,7 +2,7 @@
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on Next Data. Delivering Data Mesh to the World!
+- 🔭 I’m currently working on [Nextdata](https://www.nextdata.com/). Delivering Data Mesh to the World!
 - 🌱 I’m currently learning Data Science and Engineering
 - 👯 I’m looking to collaborate on IoT Projects and Mentorship
 - 🤔 I’m looking for help with getting better at InfoSec
