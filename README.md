@@ -34,17 +34,17 @@ fn main() {
     let mael = Profile {
         current: "Working at Nextdata on Data Mesh solutions",
         education: "Software Engineering Background",
-        interest: vec!["Data Science", "DevOps", "Productivity Engineering", "IoT"],
+        interest: vec!["Data Science", "DevOps", "Productivity Engineering", "Backend", "IoT"],
         tech: TechStack {
-            backend: vec!["Python", "Node.js", "Go", "Java", "Spring"],
+            backend: vec!["Rust", "Java", "Go", "Node.js", "Spring"],
             frontend: vec!["React", "Next.js", "Angular"],
-            cloud_infrastructure: vec!["AWS", "Azure", "Kubernetes", "Terraform", "Puppet", "Ansible"],
-            devops_tools: vec!["Docker", "Git", "Linux", "Jenkins", "Azure DevOps"],
-            data_analytics: vec!["Data Mesh", "Python", "Snowflake", "DuckDB"],
-            monitoring_observability: vec!["Grafana", "Prometheus", "Elasticsearch"],
-            iot_embedded: vec!["Arduino", "IoT"],
+            cloud_infrastructure: vec!["AWS", "Azure", "GCP", "Kubernetes", "Terraform", "Pulumi"],
+            devops_tools: vec!["ArgoCD", "Docker", "GitOps", "Linux", "Jenkins", "GitHub Actions"],
+            data_analytics: vec!["Data Mesh", "Python", "Snowflake", "DuckDB", "Databricks"],
+            monitoring_observability: vec!["Grafana", "ClickHouse", "Prometheus", "Thanos"],
+            iot_embedded: vec!["Raspberry Pi", "K3s", "Arduino", "IoT"],
         },
-        fun_fact: "I share tech tips and mentorship content on TikTok",
+        fun_fact: "I share tech tips and mentorship content on TikTok & Youtube",
     };
 }
 ```
