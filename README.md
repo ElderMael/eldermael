@@ -1,7 +1,6 @@
 <div align="center">
 
-  <h1>Hi! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.
-gif" width="35px" height="35px"> I'm Mael</h1>
+  <h1>Hi! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35px" height="35px"> I'm Mael</h1>
 
   <a href="https://www.linkedin.com/in/eldermael">
     <img src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
@@ -38,8 +37,12 @@ fn main() {
         interest: vec!["Data Science", "DevOps", "Productivity Engineering", "IoT"],
         tech: TechStack {
             backend: vec!["Python", "Node.js", "Go", "Java", "Spring"],
-            frontend: vec!["React.js", "Next.js", "JavaScript", "Angular"],
-            others: vec!["Git", "Linux", "Docker", "Kubernetes", "AWS", "Azure", "Terraform", "Ansible", "Puppet"],
+            frontend: vec!["React", "Next.js", "Angular"],
+            cloud_infrastructure: vec!["AWS", "Azure", "Kubernetes", "Terraform", "Puppet", "Ansible"],
+            devops_tools: vec!["Docker", "Git", "Linux", "Jenkins", "Azure DevOps"],
+            data_analytics: vec!["Data Mesh", "Python", "Snowflake", "DuckDB"],
+            monitoring_observability: vec!["Grafana", "Prometheus", "Elasticsearch"],
+            iot_embedded: vec!["Arduino", "IoT"],
         },
         fun_fact: "I share tech tips and mentorship content on TikTok",
     };
