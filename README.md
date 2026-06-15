@@ -32,22 +32,22 @@
 ```rust
 fn main() {
     let mael = Profile {
-        current: "Working at Nextdata on Data Mesh solutions",
-        education: "Software Engineering Background",
-        interest: vec!["Data Science", "DevOps", "Productivity Engineering", "IoT"],
+        current: "Principal Software Engineer at Nextdata Inc, working on Data Mesh solutions",
+        education: "B.S. Computer Systems Engineering - Zacatecas Institute of Technology",
+        interests: vec!["Data Mesh", "DevOps", "SRE", "Productivity Engineering", "Microservices", "Platform Engineering", "Fitness Functions"],
         tech: TechStack {
-            backend: vec!["Python", "Node.js", "Go", "Java", "Spring"],
-            frontend: vec!["React", "Next.js", "Angular"],
-            cloud_infrastructure: vec!["AWS", "Azure", "Kubernetes", "Terraform", "Puppet", "Ansible"],
-            devops_tools: vec!["Docker", "Git", "Linux", "Jenkins", "Azure DevOps"],
-            data_analytics: vec!["Python", "AWS", "Azure", "Snowflake"],
-            monitoring_observability: vec!["Grafana", "Prometheus", "Elasticsearch"],
-            iot_embedded: vec!["Arduino", "IoT"],
+            backend: vec!["Java", "Go", "JavaScript/TypeScript", "Rust", "Spring Boot", "Node.js"],
+            frontend: vec!["React", "Angular", "Astro"],
+            cloud_infrastructure: vec!["AWS", "Azure", "GCP", "Kubernetes", "Terraform", "Pulumi", "SaltStack", "Packer"],
+            devops_tools: vec!["Jenkins", "GitHub Actions", "Docker", "make"],
+            data_engineering: vec!["Data Mesh", "Data Lake/Warehousing", "ETL/ELT", "Batch Processing", "Snowflake", "Databricks", "dbt"],
+            monitoring_observability: vec!["Grafana", "Prometheus", "Thanos", "OTEL", "Clickhouse"],
+            sdet: vec!["Playwright", "Zombie.js", "BDD", "TDD", "Gatling"]
         },
         fun_fact: "I share tech tips and mentorship content on TikTok",
     };
 }
-````
+```
 
 <h2 align="left">
   <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="20px" height="20px">
