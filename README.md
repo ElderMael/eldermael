@@ -21,6 +21,11 @@
   <img src="https://img.shields.io/badge/Email-%230A66C2.svg?style=for-the-badge&logo=gmail&logoColor=white" alt="email">
 </a>
 
+  <br/>
+  <a href="https://eldermael.io/resume-mael.pdf">
+    <img src="https://img.shields.io/badge/Resume-PDF-blue?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Resume PDF">
+  </a>
+
 </div>
 
 
@@ -35,8 +40,9 @@ fn main() {
         current: "Principal Software Engineer at Nextdata Inc, working on Data Mesh solutions",
         education: "B.S. Computer Systems Engineering - Zacatecas Institute of Technology",
         interests: vec!["Data Mesh", "DevOps", "SRE", "Productivity Engineering", "Microservices", "Platform Engineering", "Fitness Functions"],
+        programming_languages: vec!["Java", "Go", "Rust", "JavaScript", "TypeScript"],
         tech: TechStack {
-            backend: vec!["Java", "Go", "JavaScript/TypeScript", "Rust", "Spring Boot", "Node.js"],
+            backend: vec!["Spring Boot", "Node.js", "Axum"],
             frontend: vec!["React", "Angular", "Astro"],
             cloud_infrastructure: vec!["AWS", "Azure", "GCP", "Kubernetes", "Terraform", "Pulumi", "SaltStack", "Packer"],
             devops_tools: vec!["Jenkins", "GitHub Actions", "Docker", "make"],
@@ -60,6 +66,19 @@ fn main() {
 
 <h2 align="left">
   <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="20px" height="20px">
+  Programming Languages
+  </h2>
+
+<p>
+  <a href="https://www.java.com/" target="_blank"><img src="https://skillicons.dev/icons?i=java" /></a>
+  <a href="https://golang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=go" /></a>
+  <a href="https://www.rust-lang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=rust" /></a>
+  <a href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank"><img src="https://skillicons.dev/icons?i=js" /></a>
+  <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=ts" /></a>
+</p>
+
+<h2 align="left">
+  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="20px" height="20px">
   Skills & Technologies
 </h2>
 
@@ -69,21 +88,23 @@ fn main() {
     <td>
       <a href="https://aws.amazon.com/" target="_blank"><img src="https://skillicons.dev/icons?i=aws" /></a>
       <a href="https://azure.microsoft.com/" target="_blank"><img src="https://skillicons.dev/icons?i=azure" /></a>
+      <a href="https://cloud.google.com/" target="_blank"><img src="https://skillicons.dev/icons?i=gcp" /></a>
       <a href="https://kubernetes.io/" target="_blank"><img src="https://skillicons.dev/icons?i=kubernetes" /></a>
       <a href="https://www.terraform.io/" target="_blank"><img src="https://skillicons.dev/icons?i=terraform" /></a>
-      <a href="https://puppet.com/" target="_blank"><img src="https://skillicons.dev/icons?i=puppet" /></a>
-      <a href="https://www.ansible.com/" target="_blank"><img src="https://skillicons.dev/icons?i=ansible" /></a>
+      <a href="https://www.pulumi.com/" target="_blank"><img src="https://skillicons.dev/icons?i=pulumi" /></a>
+      <a href="https://saltproject.io/" target="_blank"><img src="https://img.shields.io/badge/SaltStack-00AEEF?style=for-the-badge&logo=saltstack&logoColor=white" height="28" /></a>
+      <a href="https://www.packer.io/" target="_blank"><img src="https://img.shields.io/badge/Packer-02A8EF?style=for-the-badge&logo=packer&logoColor=white" height="28" /></a>
     </td>
   </tr>
   <tr>
-    <td><strong>Programming Languages & Frameworks:</strong></td>
+    <td><strong>Backend & Platforms:</strong></td>
     <td>
-      <a href="https://www.java.com/" target="_blank"><img src="https://skillicons.dev/icons?i=java" /></a>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://skillicons.dev/icons?i=js" /></a>
-      <a href="https://www.python.org/" target="_blank"><img src="https://skillicons.dev/icons?i=python" /></a>
-      <a href="https://spring.io/projects/spring-framework" target="_blank"><img src="https://skillicons.dev/icons?i=spring" /></a>
+      <a href="https://spring.io/projects/spring-boot" target="_blank"><img src="https://skillicons.dev/icons?i=spring" /></a>
       <a href="https://nodejs.org/" target="_blank"><img src="https://skillicons.dev/icons?i=nodejs" /></a>
-      <a href="https://golang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=golang" /></a>
+      <a href="https://www.rust-lang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=rust" /></a>
+      <a href="https://golang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=go" /></a>
+      <a href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank"><img src="https://skillicons.dev/icons?i=js" /></a>
+      <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=ts" /></a>
     </td>
   </tr>
   <tr>
@@ -93,24 +114,28 @@ fn main() {
       <a href="https://git-scm.com/" target="_blank"><img src="https://skillicons.dev/icons?i=git" /></a>
       <a href="https://www.linux.org/" target="_blank"><img src="https://skillicons.dev/icons?i=linux" /></a>
       <a href="https://www.jenkins.io/" target="_blank"><img src="https://skillicons.dev/icons?i=jenkins" /></a>
-      <a href="https://azure.microsoft.com/services/devops/" target="_blank"><img src="https://skillicons.dev/icons?i=azuredevops" /></a>
+      <a href="https://github.com/features/actions" target="_blank"><img src="https://skillicons.dev/icons?i=githubactions" /></a>
+      <a href="https://www.gnu.org/software/make/" target="_blank"><img src="https://img.shields.io/badge/make-000?style=for-the-badge&logo=gnu&logoColor=white" height="28" /></a>
     </td>
   </tr>
   <tr>
     <td><strong>Frontend Technologies:</strong></td>
     <td>
       <a href="https://reactjs.org/" target="_blank"><img src="https://skillicons.dev/icons?i=react" /></a>
-      <a href="https://nextjs.org/" target="_blank"><img src="https://skillicons.dev/icons?i=next" /></a>
       <a href="https://angular.io/" target="_blank"><img src="https://skillicons.dev/icons?i=angular" /></a>
+      <a href="https://astro.build/" target="_blank"><img src="https://skillicons.dev/icons?i=astro" /></a>
     </td>
   </tr>
   <tr>
     <td><strong>Data & Analytics:</strong></td>
     <td>
-      <a href="https://www.python.org/" target="_blank"><img src="https://skillicons.dev/icons?i=python" /></a>
-      <a href="https://aws.amazon.com/" target="_blank"><img src="https://skillicons.dev/icons?i=aws" /></a>
-      <a href="https://azure.microsoft.com/" target="_blank"><img src="https://skillicons.dev/icons?i=azure" /></a>
+      <img src="https://img.shields.io/badge/Data%20Mesh-6A5ACD?style=for-the-badge" height="28" />
+      <img src="https://img.shields.io/badge/Data%20Lake%2FWarehousing-556B2F?style=for-the-badge" height="28" />
+      <img src="https://img.shields.io/badge/ETL%2FELT-2F4F4F?style=for-the-badge" height="28" />
+      <img src="https://img.shields.io/badge/Batch%20Processing-483D8B?style=for-the-badge" height="28" />
       <a href="https://www.snowflake.com/" target="_blank"><img src="https://skillicons.dev/icons?i=snowflake" /></a>
+      <a href="https://www.databricks.com/" target="_blank"><img src="https://img.shields.io/badge/Databricks-EF3E2B?style=for-the-badge&logo=databricks&logoColor=white" height="28" /></a>
+      <a href="https://www.getdbt.com/" target="_blank"><img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white" height="28" /></a>
     </td>
   </tr>
   <tr>
@@ -118,14 +143,19 @@ fn main() {
     <td>
       <a href="https://grafana.com/" target="_blank"><img src="https://skillicons.dev/icons?i=grafana" /></a>
       <a href="https://prometheus.io/" target="_blank"><img src="https://skillicons.dev/icons?i=prometheus" /></a>
-      <a href="https://www.elastic.co/elasticsearch/" target="_blank"><img src="https://skillicons.dev/icons?i=elasticsearch" /></a>
+      <a href="https://thanos.io/" target="_blank"><img src="https://img.shields.io/badge/Thanos-5C2D91?style=for-the-badge" height="28" /></a>
+      <a href="https://opentelemetry.io/" target="_blank"><img src="https://img.shields.io/badge/OTEL-000?style=for-the-badge&logo=opentelemetry&logoColor=white" height="28" /></a>
+      <a href="https://clickhouse.com/" target="_blank"><img src="https://img.shields.io/badge/ClickHouse-FFCC01?style=for-the-badge&logo=clickhouse&logoColor=000" height="28" /></a>
     </td>
   </tr>
   <tr>
-    <td><strong>IoT & Embedded Systems:</strong></td>
+    <td><strong>SDET & QA:</strong></td>
     <td>
-      <a href="https://www.arduino.cc/" target="_blank"><img src="https://skillicons.dev/icons?i=arduino" /></a>
-      <a href="https://www.iot.com/" target="_blank"><img src="https://skillicons.dev/icons?i=iot" /></a>
+      <a href="https://playwright.dev/" target="_blank"><img src="https://skillicons.dev/icons?i=playwright" /></a>
+      <a href="https://zombie.js.org/" target="_blank"><img src="https://img.shields.io/badge/Zombie.js-8A2BE2?style=for-the-badge" height="28" /></a>
+      <img src="https://img.shields.io/badge/BDD-228B22?style=for-the-badge" height="28" />
+      <img src="https://img.shields.io/badge/TDD-DC143C?style=for-the-badge" height="28" />
+      <a href="https://gatling.io/" target="_blank"><img src="https://img.shields.io/badge/Gatling-FF7F50?style=for-the-badge" height="28" /></a>
     </td>
   </tr>
 </table>
