@@ -154,14 +154,15 @@ must land atomically. No service or cross-project contract is changed.
   Keep it local, with no styling, scripting, external service, or second
   graphic; place it after all profile copy and links. Write scope: README,
   this plan, and `assets/circuitry-accent.svg`; commit atomically.
-- S2 checks and evidence: GitHub GFM API rendered the image as a local
-  relative `<img>` with empty alt. Chromium previews at 375px and 1440px in
-  light and dark backgrounds show the circuitry at 311x83px and 570x152px,
-  respectively, after the copy and links. It is a subdued green/gold motif
-  with a dark backing on both backgrounds. With the image URL unavailable,
-  rendered text and all seven anchors (including the decorative image link)
-  remained identical. This local preview does not reproduce hosted GitHub
-  profile CSS. No public state change or push is authorized.
+- S2 checks and evidence (original): GitHub GFM API rendered the image as a
+  local relative `<img>` with empty alt. Chromium previews at 375px and
+  1440px in light and dark backgrounds show the circuitry at 311x83px and
+  570x152px, respectively, after the copy and links. It is a subdued
+  green/gold motif with a dark backing on both backgrounds. With the image
+  URL unavailable, rendered text and all seven anchors (including the
+  decorative image link) remained identical. This local preview does not
+  reproduce hosted GitHub profile CSS. No public state change or push was
+  authorized.
 - Checkpoint: record source provenance, rendered previews, alt and image-off
   results, base and ordered story commit SHAs, and review findings for the
   marked commit at a pinned trunk SHA. Review includes Markdown rendering,
@@ -190,3 +191,16 @@ details, with no lasting public contract or hard-to-reverse data choice.
   after commit. Live GitHub profile CSS remains unverified; no push or public
   state change is authorized.
 - Review for the P2 marked commit: Pending.
+- Accepted P2 accessibility follow-up at `ddb1fa3`'s successor: the review
+  found GitHub's GFM renderer wraps the empty-alt image in a link, leaving a
+  focusable unnamed link. Updated alt to `View the circuitry illustration` so
+  the generated link has a concise accessible name while the artwork remains
+  nonessential to profile copy and navigation. GitHub GFM API rendered the
+  README and confirmed that its local image anchor contains that exact alt.
+  Chromium's accessibility tree exposed the link with the name
+  `View the circuitry illustration`; keyboard Tab navigation reached the
+  generated image anchor and its image alt supplied that name. The rendered
+  image remains last after the profile links. Image-off verification found
+  all text and non-image links unchanged. `git diff --check` and Markdown
+  wrapping checks passed. Checks were local and did not use a hosted profile
+  preview; no public state change or push was performed.

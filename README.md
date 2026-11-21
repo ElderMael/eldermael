@@ -23,4 +23,4 @@ I work across:
 - [LinkedIn](https://www.linkedin.com/in/eldermael/)
 - [Resume (PDF)](https://eldermael.io/resume-mael.pdf)
 
-![](assets/circuitry-accent.svg)
+![View the circuitry illustration](assets/circuitry-accent.svg)
