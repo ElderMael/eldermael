@@ -63,13 +63,13 @@ must land atomically. No service or cross-project contract is changed.
 
 ### P1: Concise portfolio-led native Markdown content
 
-- Entry: checkout is `main` at `fd4f758`; verify this pin and inspect the
-  README and working tree. The pre-existing Pulumi badge edit and untracked
-  `.junie/` and `.pi/` are caller-owned; the writer may not alter or stage
-  them. Before implementation, obtain resolution from the owner of the
-  pre-existing README edit. Reconcile exact current portfolio copy and links
-  against rendered live pages, not just the local sibling checkout. Review
-  the local portfolio evidence at `5ee4b86` only as read-only background.
+- Entry: actual trunk base was `683bf5481ecf65f860367e9f6c19ac608940ca4b`
+  (`main`), not the plan's earlier `fd4f758` pre-plan README baseline. The
+  owner explicitly authorized superseding the sole unstaged Pulumi badge edit
+  with this redesign; it was not separately committed. Untracked `.junie/` and
+  `.pi/` were left untouched and unstaged. Rendered live pages were inspected
+  with headless Chrome immediately before implementation. The sibling source
+  at `5ee4b86a50451ba5d26a654d4767f171396e0821` was read-only context only.
 - S1 (J1, J2): deliver a self-contained README content redesign in native
   Markdown. Lead with identity and concise positioning; summarize AI and
   software, infrastructure and platforms, and data engineering; select only
@@ -89,14 +89,55 @@ must land atomically. No service or cross-project contract is changed.
   removed legacy links and resume disposition are documented; inspect
   GitHub-rendered narrow and desktop previews in light and dark themes; ensure
   no layout relies on third-party badges or image loading.
-- Checkpoint: capture the exact README diff and link/claim inventory, the
-  rendered-live-site evidence and pinned portfolio source/revision consulted,
-  and the `main` base SHA and story commit SHA. Run Markdown/link checks and
-  review the rendered previews. Request `change_review` for the marked story
-  commit at its pinned trunk SHA and the README delta; include content accuracy,
-  link dispositions, image independence, and the preserved user-owned changes.
-  Record actual outcomes; checks not run are Pending. Caller decision after
-  evidence: Pending. Do not start P2 without caller acceptance.
+- S1 implementation evidence (text-only; P2 not started):
+  - Base: `683bf5481ecf65f860367e9f6c19ac608940ca4b`. Live Home, About,
+    Contact (`/contact-me`), and Social (`/social`) were rendered using
+    headless Chrome. Live Home says “Miguel Enriquez · AI & systems
+    engineering,” describes useful, dependable systems, and names AI &
+    software, infrastructure & platforms, and data engineering. Live Home and
+    About substantiate the selected OpenTelemetry Helm chart webhook fix and
+    ClickHouse exporter DDL documentation; both PR pages responded HTTP 200.
+    The deployed Home also links to Portfolio and LinkedIn. Contact renders a
+    contact form at `/contact-me`.
+  - Copy and claim inventory: README uses the rendered live positioning and
+    three expertise areas. It selects only the two live-listed OpenTelemetry
+    PRs; it does not carry forward unverified job-duration or broad skills
+    claims. Portfolio, contact, LinkedIn, and resume are retained. Portfolio,
+    contact, and resume responded HTTP 200; resume returned `application/pdf`.
+    LinkedIn is linked from the deployed Home, but automated curl returned
+    999 (access blocked), so it was not independently status-verified.
+  - Legacy link dispositions: portfolio, LinkedIn, and resume kept. Old email
+    badge replaced with the deployed contact-form path. Twitter URL redirects
+    to X (HTTP 200) but omitted to keep the profile focused; Dev.to (HTTP 200)
+    is not linked by the deployed site's rendered profile pages and omitted.
+    TikTok (HTTP 200) is listed on deployed Social but omitted as secondary;
+    the old TikTok tech-tips assertion is also omitted because live rendered
+    copy does not substantiate it. Badge images, animated images, skill tables,
+    Rust code bio, and third-party GitHub analytics removed; no image is needed
+    for content or navigation.
+  - Rendering and responsive evidence: GitHub's unauthenticated GFM Markdown
+    API rendered the proposed README successfully as headings, paragraphs,
+    bullets, and anchors, with no tables, images, or code blocks. All README
+    absolute links were checked; the two PRs and four retained destinations
+    resolve as recorded above. The API-rendered HTML was viewed in Chromium
+    at 375px and 1440px with light and dark preview backgrounds; content
+    reflowed without horizontal overflow or image dependencies. These local
+    previews do not apply GitHub's full profile-page chrome or exact CSS.
+    Hosted GitHub profile previews were not produced, and GitHub themes are
+    largely user-agent/browser controlled. No public state was changed or
+    pushed.
+  - Local portfolio source consulted read-only at
+    `5ee4b86a50451ba5d26a654d4767f171396e0821`: `src/components/Home.tsx`,
+    `src/components/About.tsx`, `src/components/Social.tsx`, and
+    `src/components/routes.ts`. The checkout is three commits ahead of
+    `origin/master` (checked during implementation) and is background only; no
+    local-only assertions were used as live evidence.
+  - User-owned change resolution: owner approved superseding the unstaged
+    Pulumi badge image edit as part of README replacement; no independent
+    Pulumi change was staged or committed. `.junie/` and `.pi/` remain
+    untouched and unstaged.
+  - Change review and caller acceptance: Pending; P2 remains blocked until
+    caller accepts P1. No publication or push is authorized.
 
 ### P2: Optional static circuitry accent
 
@@ -133,14 +174,14 @@ details, with no lasting public contract or hard-to-reverse data choice.
 
 ## Progress and open questions
 
-- Planning complete; no profile implementation is authorized by this plan.
-- P1 is ready after the owner resolves the pre-existing README edit and the
-  live rendered portfolio content and target links are reconciled. Exact
-  wording, selected contribution, link dispositions, and resume validity need
-  that evidence and review.
+- P1/S1 content implementation is complete at the recorded actual trunk base;
+  record the landed commit SHA after commit. Owner approval resolved the
+  Pulumi edit conflict. The plan records live rendering, claim/link evidence,
+  and known rendering-preview gaps.
+
 - P2 is blocked on P1 completion and acceptance. Asset reuse, final asset
   path, whether the circuitry is decorative or meaningful, and rendered
   suitability remain to be established; do not assume permission to add an
   asset before review.
-- Commit SHAs, link-check results, rendered previews, reviews, caller decisions,
-  and publication decision: Pending.
+- Change review and publication decision: Pending. No push or public state
+  change was made.
