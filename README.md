@@ -22,3 +22,5 @@ I work across:
 - [Contact me](https://eldermael.io/contact-me)
 - [LinkedIn](https://www.linkedin.com/in/eldermael/)
 - [Resume (PDF)](https://eldermael.io/resume-mael.pdf)
+
+![](assets/circuitry-accent.svg)

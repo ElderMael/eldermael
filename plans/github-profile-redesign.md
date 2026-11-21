@@ -141,30 +141,31 @@ must land atomically. No service or cross-project contract is changed.
 
 ### P2: Optional static circuitry accent
 
-- Entry: P1 has landed and been accepted; P1's text-only rendering passes
-  J1/J2; exact rendered appearance and image references are rechecked.
-  The caller has resolved the unrelated README Pulumi edit before any README
-  edit begins.
-- S2 (J3): add one static circuitry accent, preferably a repository-local
-  asset derived from the portfolio's existing `public/circuitry.svg` only
-  after checking that it is suitable to reuse; otherwise create no new
-  artwork without approval. Use native Markdown image syntax and no styling,
-  scripting, animation, external image service, or second graphic. Keep it
-  away from essential copy and make its alt text reflect whether it is
-  decorative or informative. Anchor: README image reference and the approved
-  local asset path (settle the path during implementation; no path is
-  reserved yet). Write scope: one local asset, README, and plan update; commit
-  them atomically. Acceptance checks: preview at narrow and desktop widths in
-  light and dark GitHub themes; check contrast and crop/readability; confirm
-  meaningful alt handling or empty alt for decoration; disable or fail the
-  image and confirm all J1/J2 copy, links, and layout remain usable.
-- Checkpoint: record asset provenance and review, exact rendered previews,
-  alt-text and image-off results, base and story commit SHAs, and
-  `change_review` findings for the marked commit at a pinned trunk SHA. Review
-  scope includes
-  Markdown rendering, accessibility, contrast, and independence from the
-  artwork. Caller decision after evidence: Pending. No permission to publish
-  or push is implied.
+- Entry: P1 landed at `5f7d62d519c9a536a4a82d5181f8f51a18362a6e` and the
+  caller accepted the text and authorized adding the accent. Text-only
+  rendering passes J1/J2; the owner resolved the unrelated README Pulumi
+  edit before P1.
+- S2 (J3): add one static, decorative circuitry accent in native Markdown
+  using empty alt text. Source reviewed read-only at
+  `/home/eldermael/Repos/eldermael/portfolio-website/public/circuitry.svg`,
+  revision `11833aed72b95f8b8370a20b2c847ad4627150ad`; its authored file has
+  no animation or external assets. Adapt its viewBox to a compact 600x160
+  banner and remove its title and text so the visible crop is nonessential.
+  Keep it local, with no styling, scripting, external service, or second
+  graphic; place it after all profile copy and links. Write scope: README,
+  this plan, and `assets/circuitry-accent.svg`; commit atomically.
+- S2 checks and evidence: GitHub GFM API rendered the image as a local
+  relative `<img>` with empty alt. Chromium previews at 375px and 1440px in
+  light and dark backgrounds show the circuitry at 311x83px and 570x152px,
+  respectively, after the copy and links. It is a subdued green/gold motif
+  with a dark backing on both backgrounds. With the image URL unavailable,
+  rendered text and all seven anchors (including the decorative image link)
+  remained identical. This local preview does not reproduce hosted GitHub
+  profile CSS. No public state change or push is authorized.
+- Checkpoint: record source provenance, rendered previews, alt and image-off
+  results, base and ordered story commit SHAs, and review findings for the
+  marked commit at a pinned trunk SHA. Review includes Markdown rendering,
+  accessibility, contrast, and independence from the artwork.
 
 ## Glossary and decisions
 
@@ -174,14 +175,18 @@ details, with no lasting public contract or hard-to-reverse data choice.
 
 ## Progress and open questions
 
-- P1/S1 content implementation is complete at the recorded actual trunk base;
-  record the landed commit SHA after commit. Owner approval resolved the
-  Pulumi edit conflict. The plan records live rendering, claim/link evidence,
-  and known rendering-preview gaps.
+- P1/S1 landed at `5f7d62d519c9a536a4a82d5181f8f51a18362a6e`; owner
+  approval resolved the Pulumi edit conflict. Additional deployed Home DOM
+  evidence obtained by the caller with headless Chrome confirms the exact
+  cards: “Applying AI to software development and the way teams work.” and
+  “Data platforms, data products, and evolving architectures.” This resolves
+  the prior review evidence gap without changing P1 copy. See P1's retained
+  evidence bundle at `/tmp/profile-01-review.E9E6EU/` for checks, previews,
+  source excerpts, and patch.
 
-- P2 is blocked on P1 completion and acceptance. Asset reuse, final asset
-  path, whether the circuitry is decorative or meaningful, and rendered
-  suitability remain to be established; do not assume permission to add an
-  asset before review.
-- Change review and publication decision: Pending. No push or public state
-  change was made.
+- P2/S2 is approved by caller. Its asset is a compact, decorative crop of the
+  static source noted above, referenced after all text and links with empty
+  alt. Record the new marked SHA and local rendering / image-off evidence
+  after commit. Live GitHub profile CSS remains unverified; no push or public
+  state change is authorized.
+- Review for the P2 marked commit: Pending.
