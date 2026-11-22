@@ -9,9 +9,9 @@ near the top, followed by native Markdown identity and actions. The banner is
 an accent, not a container for essential information. Use the portfolio's
 charcoal and muted green palette and retain a concise, text-first profile.
 
-The profile owner verified the live GitHub profile and portfolio title and
-tagline before this plan; the verified profile README is the baseline at
-`eb6239659106fe54db71f7b71055c3b62b8e2da0`. Use the read-only portfolio
+The assistant verified the hosted GitHub profile README against baseline
+`eb6239659106fe54db71f7b71055c3b62b8e2da0` and verified the headline in the
+read-only portfolio source. Use the read-only portfolio
 source as copy and motif evidence, not as a write target. Keep the exact
 portfolio headline, “Building systems that help people build.”, and
 “Miguel Enriquez · AI & systems engineering.” Actions are portfolio, contact,
@@ -133,7 +133,7 @@ contracts, or cross-repository writes.
   banner; observable result is the described profile hierarchy with working
   text content when the image fails; evidence is the pinned GFM rendering,
   SVG/markup inspection, and comparison screenshots described above; status:
-  proposed, not started; ordered commit references: Pending.
+  implemented; ordered commit references are in the landed task receipt.
 - Checkpoint: gather the complete evidence in Feature acceptance at one
   pinned trunk revision, with ordered marked story commits, screenshot paths,
   GFM and image-off results, viewport/theme details, security triage, and any
@@ -155,8 +155,9 @@ no public contract or hard-to-reverse data choice.
 - Plan prepared for new story PROFILE-02, not a revision of PROFILE-01.
 - Baseline: `eb6239659106fe54db71f7b71055c3b62b8e2da0` (user-provided and
   checked as current `main` at planning start).
-- P1/S1/T1: proposed; implementation, GFM rendering, screenshots, security
-  triage verification, review, and explicit user acceptance are Pending.
-- No feature changes, publication, push, or release are authorized by this
-  planning increment. No open question; the concrete direction is user
-  confirmed.
+- P1/S1/T1: implementation is committed atomically; the ordered task SHA is
+  recorded in the landed receipt. GFM rendering, screenshots, and security
+  triage verification are reported in the implementation receipt. Exact-pin
+  review and explicit user acceptance remain Pending. No human pairing,
+  publication, push, or release is claimed.
+- No open question; the concrete direction is user confirmed.

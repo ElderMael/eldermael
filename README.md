@@ -1,26 +1,16 @@
-# Miguel Enriquez
+[![Charcoal circuitry banner with fine olive traces and an orbital motif](assets/circuitry-accent.svg)](https://eldermael.io/)
 
-**AI & systems engineering** — I build useful, dependable systems that help
-people build.
+# Building systems that help people build.
 
-I work across:
+**Miguel Enriquez · AI & systems engineering.**
 
-- **AI & software** — applying AI to software development and how teams work.
-- **Infrastructure & platforms** — platform engineering, DevOps, and
-  dependable infrastructure.
-- **Data engineering** — data platforms, data products, and evolving
-  architectures.
+[Portfolio](https://eldermael.io/) · [Contact](https://eldermael.io/contact-me) · [Résumé](https://eldermael.io/resume-mael.pdf)
+
+[LinkedIn](https://www.linkedin.com/in/eldermael/)
+
+AI and software · infrastructure and platforms · data engineering
 
 ## Selected work
 
-- [OpenTelemetry Helm chart webhook fix](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/1391)
-- [OpenTelemetry Collector ClickHouse exporter DDL documentation](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/35903)
-
-## Explore and connect
-
-- [Portfolio](https://eldermael.io/)
-- [Contact me](https://eldermael.io/contact-me)
-- [LinkedIn](https://www.linkedin.com/in/eldermael/)
-- [Resume (PDF)](https://eldermael.io/resume-mael.pdf)
-
-![View the circuitry illustration](assets/circuitry-accent.svg)
+- [Helm chart webhook fix](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/1391) — Stops disabled admission webhooks from remaining referenced for CRD conversion.
+- [ClickHouse exporter DDL](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/35903) — Adds the missing exponential histogram and gauge table DDL examples.
